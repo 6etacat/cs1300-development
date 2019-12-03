@@ -1,0 +1,28 @@
+.Pokedex {
+  background: #eeeeee;
+  height: 100%;
+  width: 100%;
+  font-family: 'VT323', monospace;
+  /* font-size: 20pt; */
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  font-size: 8em;
+  margin: 0;
+  padding: 10px;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+.entry-container {
+  margin: auto;
+  width: 90vw;
+}
