@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import pokedex from './pokedex.json';
-import './App.css';
+import './Pokedex.css';
 import Entry from './Entry.jsx'
 import Header from './Header.jsx'
 
@@ -62,8 +62,8 @@ class Pokedex extends Component {
 
   render() {
     return (
-      <div className="Pokedex">
-        <h1>Awesome Pokédex</h1>
+      <div id="top" className="Pokedex">
+        <h1>Pokédex</h1>
         <p>This Pokédex uses data cached from <a href="https://pokeapi.co/">PokéAPI</a>. </p>
         <div className="entry-container">
           <Header update={this.updateRender} />

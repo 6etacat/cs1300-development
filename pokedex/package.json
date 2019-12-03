@@ -1,25 +1,27 @@
 {
-  "name": "website",
-  "version": "0.1.0",
-  "private": true,
+  "name": "pokedex",
+  "version": "1.0.0",
+  "description": "Pokedex",
+  "main": "index.js",
+  "homepage": "https://michaelmao.me/pokedex",
   "dependencies": {
-    "@material-ui/core": "^4.7.1",
+    "gh-pages": "^2.1.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-lazyload": "^2.6.5",
-    "react-paginate": "^6.3.2",
-    "react-scripts": "3.2.0",
+    "react-scripts": "^3.2.0",
     "react-svg": "^10.0.25"
   },
+  "devDependencies": {},
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
+  "author": "Michael Mao",
+  "license": "ISC",
   "browserslist": {
     "production": [
       ">0.2%",

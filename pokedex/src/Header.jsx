@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Entry.css';
 import arrow from './arrow.svg';
+import top from './top.png';
 import ReactSVG from 'react-svg'
 
 class Header extends Component {
@@ -69,6 +70,7 @@ class Header extends Component {
     return (
       <div className="header">
         <div className="entry">
+          <a href="#top"><img class="top" src={top} alt="go to top" /></a>
           <div className="data">
             <table className="data-entry">
               <tbody>
@@ -123,18 +125,6 @@ class Header extends Component {
                   {this.state.ordering.map(id =>
                     <th key={id}><ReactSVG id={id} onClick={this.handleClick} className={this.getClass(id)} src={arrow} /></th>
                   )}
-                  {/* <th><ReactSVG id="number" onClick={this.handleClick} className="sort reversed" src={arrow} /></th>
-                  <th><ReactSVG id="name" onClick={this.handleClick} className="sort reversed" src={arrow} /></th>
-                  <th><ReactSVG id="height" onClick={this.handleClick} className="sort reversed" src={arrow} /></th>
-                  <th><ReactSVG id="weight" onClick={this.handleClick} className="sort reversed" src={arrow} /></th>
-                  <th className="single-type"></th>
-                  <th><ReactSVG id="hp" onClick={this.handleClick} className="sort reversed" src={arrow} /></th>
-                  <th><ReactSVG id="attack" onClick={this.handleClick} className="sort reversed" src={arrow} /></th>
-                  <th><ReactSVG id="defense" onClick={this.handleClick} className="sort reversed" src={arrow} /></th>
-                  <th><ReactSVG id="special-attack" onClick={this.handleClick} className="sort reversed" src={arrow} /></th>
-                  <th><ReactSVG id="special-defense" onClick={this.handleClick} className="sort reversed" src={arrow} /></th>
-                  <th><ReactSVG id="speed" onClick={this.handleClick} className="sort reversed" src={arrow} /></th>
-                  <th></th> */}
                 </tr>
               </tbody>
             </table>

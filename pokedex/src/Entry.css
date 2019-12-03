@@ -23,17 +23,26 @@
   height: 100%;
 }
 
+div.header {
+  background: #eeeeee;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid black;
+}
+
+.header th{
+  font-weight: bold;
+  font-family: 'VT323', monospace;
+  font-size: 18pt;
+}
+
 .data-entry tr {
   width: 100%;
   display: grid;
   justify-items: center;
   align-items: center;
+  font-family: 'Roboto Mono', monospace;
   grid-template-columns: 1fr 1fr 1fr 1fr 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-}
-
-td {
-  font-weight: bold;
-  font-size: 12pt;
 }
 
 select {
@@ -42,7 +51,8 @@ select {
   border-bottom: 2px solid black;
   outline:0px;
   font-weight: bold;
-  font-size: 12pt;
+  font-family: 'VT323', monospace;
+  font-size: 16pt;
 }
 
 .sort {
@@ -55,7 +65,7 @@ select {
 }
 
 .reversed {
-  transform: scaleY(-1);
+  transform: rotate(180deg);
 }
 
 .enabled {
