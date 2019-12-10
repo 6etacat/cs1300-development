@@ -3,6 +3,7 @@ import pokedex from './pokedex.json';
 import './Pokedex.css';
 import Entry from './Entry.jsx'
 import Header from './Header.jsx'
+import LazyLoad from 'react-lazyload';
 
 class Pokedex extends Component {
   constructor(props) {
@@ -68,8 +69,10 @@ class Pokedex extends Component {
         <div className="entry-container">
           <Header update={this.updateRender} />
           {this.state.processedPokemons.map(pokemon =>
+            <LazyLoad height={116} once>
               <Entry pokemon={pokemon} key={pokemon.number} />
-            )}
+            </LazyLoad>
+          )}
         </div>
       </div>
     );
