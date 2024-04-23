@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Pokedex",
   "main": "index.js",
-  "homepage": "https://michaelmao.me/pokedex",
+  "homepage": "https://michaelmao.me/cs1300-pokedex",
   "dependencies": {
     "gh-pages": "^5.0.0",
     "react": "^16.12.0",
