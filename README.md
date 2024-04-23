@@ -3,7 +3,7 @@
 This is a Pokédex that allows for quick comparisons between Pokémons for 
 Pokémon players. 
 
-The Pokédex can be accessed at http://michaelmao.me/pokedex. 
+The Pokédex can be accessed at https://michaelmao.me/cs1300-pokedex. 
 
 The data is gathered from [PokéAPI](https://pkeapi.co). The data is scraped 
 and assembled using the `scrape.ipynb` Jupyter Notebook under `collect_data` 
